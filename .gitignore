@@ -1,0 +1,6 @@
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
+CEN_XFS_HEADERS/*
+
+CEN_XFS_PDF_HEADER_ONLY/*
