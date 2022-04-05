@@ -31,7 +31,7 @@ find ./CEN_XFS_PDF -type f -name "*.pdf" -print0 | while IFS= read -r -d '' file
         pdftk "$file" cat $i-end output "./CEN_XFS_PDF_HEADER_ONLY/$file_name"
 
         echo "Generation raw header file"
-        pdftotext -layout -f $i -l -1 "$file" "./CEN_XFS_HEADERS/$(basename "$file" .pdf).h"
+        pdftotext -layout -f $i -l -1 -x 70 -y 70 -H 700 -W 620 "$file" "./CEN_XFS_HEADERS/$(basename "$file" .pdf).h"
         echo ""
 
     else
