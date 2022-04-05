@@ -1,6 +1,4 @@
-# make comments available in zsh:
-#setopt interactivecomments
-
+#!/bin/bash
 
 if [ ! -d "./CEN_XFS_PDF_HEADER_ONLY" ] 
 then
